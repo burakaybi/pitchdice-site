@@ -1,0 +1,37 @@
+/* The game's sticker-album look (docs/album-theme.md) for the privacy and support pages. */
+:root {
+  --page: #0A2629;
+  --page-top: #175056;
+  --cream: #FBF3DF;
+  --cream-text: #F6E9CF;
+  --ink: #2A1D15;
+  --orange: #E0682A;
+  --mint: #ABE6D3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(var(--page-top), var(--page)) fixed;
+  color: var(--cream-text);
+  font: 17px/1.6 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+.eyebrow { color: var(--orange); font-weight: 800; letter-spacing: 3px; font-size: 13px; margin: 0; }
+h1, h2, h3 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 900; line-height: 1.2; }
+h1 { font-size: 40px; margin: 8px 0; }
+h2 { font-size: 24px; margin-top: 32px; }
+h3 { font-size: 19px; margin: 24px 0 4px; }
+.meta { opacity: 0.8; font-size: 15px; }
+a { color: var(--mint); }
+.card {
+  background: var(--cream);
+  color: var(--ink);
+  border: 2.5px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 5px 5px 0 var(--ink);
+  padding: 4px 20px 12px;
+  margin: 24px 0;
+}
+.card h2 { margin-top: 16px; }
+.card a { color: #1D5E63; }
+hr { border: 0; border-top: 2px dashed rgba(246, 233, 207, 0.3); margin: 56px 0 24px; }
